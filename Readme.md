@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Vlad Deev](https://up.htmlacademy.ru/htmlcss/29/user/1181367).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
