@@ -2,11 +2,291 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин гаджетов «Девайс»</title>
   </head>
+
   <body>
+    <header>
+      <!-- Navigation -->
+      <nav>
+        <!-- TODO: Question: Is the logo image or text? -->
+        <a>
+          <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
+        </a>
+        <!-- Secondary Navigation Bar -->
+        <ul>
+          <li><input type="text" placeholder="Поиск по сайту"></li>
+          <li><a href="">Войти</a></li>
+          <li><a href="">Сравнить</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+        <!-- Primary Navigation Bar -->
+        <ul>
+          <li><a href="catalog.html">Каталог Товаров</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <h1>Интернет-магазин гаджетов «Девайс»</h1>
 
+      <!-- Slider: Promos -->
+      <section>
+        <h2>Промо-слайдер</h2>
+        <!-- Slide 1: Monopods -->
+        <article>
+          <h3>Монопод Бен Стиллер</h3>
+          <figure>
+            <a href="">
+              <img src="https://via.placeholder.com/384x486" width="384" height="486" alt="Логотип интернет-магазина гаджетов «Девайс»">
+            </a>
+          </figure>
+          <!-- 
+            TODO: 
+            Question: Is there something better than div that I can use here?
+          -->
+          <div>
+            <div>
+              <div></div><!-- Rectangle Placeholder -->
+              <p>01</p>
+            </div>
+            <div><!-- Product Description Body -->
+              <p>
+                Делай селфи,<br>
+                как Бен Стиллер! 
+              </p>
+              <p>
+                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+            </div>
+            <div><!-- Slider Controls -->
+              <a href="">Подробнее</a>
+              <ul>
+                <li><button type="button">Слайд 1</button></li>
+                <li><button type="button">Слайд 2</button></li>
+                <li><button type="button">Слайд 3</button></li>
+              </ul>
+            </div>
+            <table><!-- Product Specs -->
+              <thead>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <!-- 
+          TODO: Qutdion: How to open slides 2 and 3 in Figma?
+        -->
+        <!-- Slide 2: -->
+        <article>
+           <h3>Слайд 2</h3>
+        </article>
+        <!-- Slide 3: -->
+        <article>
+          <h3>Слайд 3</h3>
+        </article>
+      </section>
+
+      <!-- Catalog Sections -->
+      <section>
+        <h2>Разделы каталога</h2>
+        <ul>
+          <!-- VR Section Link -->
+          <li>
+            <a href="">
+              <h3>Виртуальная реальность</h3>
+              <figure></figure><!-- TODO: Question: Do we need another element inside figure to hold an icon? -->
+            </a>
+          </li>
+          <!-- Monopods Section Link -->
+          <li>
+            <a href="">
+              <h3>Моноподы для селфи</h3>
+              <figure></figure>
+            </a>
+          </li>
+          <!-- Action Cameras Section Link -->
+          <li>
+            <a href="">
+              <h3>Экшн-камеры</h3>
+              <figure></figure>
+            </a>
+          </li>
+          <!-- Fitness Trackers Section Link -->
+          <li>
+            <a href="">
+              <h3>Фитнес-браслеты</h3>
+              <figure></figure>
+            </a>
+          </li>
+          <!-- Smartwatches Section Link -->
+          <li>
+            <a href="">
+              <h3>Умные часы</h3>
+              <figure></figure>
+            </a>
+          </li>
+          <!-- Quadrocopters Section Link -->
+          <li>
+            <a href="">
+              <h3>Квадракоптеры</h3>
+              <figure></figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Slider: Services -->
+      <section>
+        <h2>Сервисы</h2>
+        <nav><!-- TODO: Question: Using the nav tag seems excessive? -->
+          <ul>
+            <li><button type="button" disabled>Доставка</button></li>
+            <li><button type="button">Гарантия</button></li>
+            <li><button type="button">Кредит</button></li>
+          </ul>
+        </nav>
+        <!-- Slide 1: Delivery -->
+        <article>
+          <h3>Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему<br>
+            подъезду совершенно бесплатно! Ведь мы неплохо<br>
+            заработаем, поднимая его на ваш этаж.
+          </p>
+          <figure></figure>
+        </article>
+        <!-- Slide 2: Warranty -->
+        <article>
+          <h3>Гарантия</h3>
+          <p></p>
+          <figure></figure>
+        </article>
+        <!-- Slide 2: Loan -->
+        <article>
+          <h3>Кредит</h3>
+          <p></p>
+          <figure></figure>
+        </article>
+      </section>
+
+      <!-- Available Brands -->
+      <section>
+        <h2>Бренды</h2>
+        <ul>
+          <!-- 
+            TODO: 
+            Question: I'd use CSS background-image instead of the img tag.
+            How do I insure the user sees a some kind of alt text if I don't use the img tag?
+          -->
+          <li><img src="https://via.placeholder.com/260x100" width="260" height="100" alt="Логотип DJI"></li>
+          <li><img src="https://via.placeholder.com/260x100" width="260" height="100" alt="Логотип SP Gadgets"></li>
+          <li><img src="https://via.placeholder.com/260x100" width="260" height="100" alt="Логотип GoPro"></li>
+          <li><img src="https://via.placeholder.com/260x100" width="260" height="100" alt="Логотип Vive"></li>
+        </ul>
+      </section>
+
+      <!-- Company & Contact Info -->
+      <section>
+        <h2>Информация о компании</h2>
+        <!-- About Us -->
+        <article>
+          <h3>О нас</h3>
+          <!-- 
+            TODO: 
+            Question: Is it ok to wrap the copy in some kind of div?
+          -->
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика,<br>
+            который есть в каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки<br>
+            России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <button type="button">Подробнее о нас</button>
+          <div></div><!-- Rectangle Placeholder -->
+        </article>
+        <!-- Contacts -->
+        <article>
+          <h3>Контакты</h3>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+          </p>
+          <a href="">
+            <img src="https://via.placeholder.com/560x222" width="560" height="222" alt="Карта">
+          </a>
+          <button type="button">Напишите нам</button>
+          <div></div><!-- Rectangle Placeholder -->
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Secondary Navigation Bar + Logo-->
+      <section>
+        <h2>Навигация по сайту</h2>
+        <ul>
+          <li><input type="text" placeholder="Поиск по сайту"></li>
+          <li><a href="">Войти</a></li>
+          <li><a href="">Сравнить</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+        <!-- Company's logo -->
+        <a>
+          <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
+        </a>
+      </section>
+
+      <!-- Contacts + Site Navigation -->
+      <section>
+        <h2>Контакты</h2>
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </section>
+
+      <!-- Social media + Copyright -->
+      <section>
+        <h3>Давайте дружить</h3>
+        <div></div><!-- Rectangle Placeholder -->
+        <ul>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </section>
+    </footer>
   </body>
 </html>
