@@ -1,0 +1,314 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Gilroy Light'), local('GilroyLight'),
+    url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-style: normal;
+    src: local('Gilroy ExtraBold'), local('GilroyExtraBold'),
+    local('Gilroy Extra Bold'),
+    url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Open Sans Regular'), local('OpenSansRegular'),
+    url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Open Sans Light'), local('OpenSansLight'),
+    url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff')
+}
+
+
+/* Global Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-white:#FFFFFF;
+    --basic-gray: #464646;
+    --basic-half-gray: #7E7E7E;
+    --basic-gray-light: #E5E5E5;
+    --special-gray-basic: #EBEBEB;
+    --special-gray-dark: #D9D9D9;
+    --special-gray-light: #EAEAEA;
+    --special-gray-xlight: #F2F2F2;
+    --special-yellow: #F7E296;
+    --special-yellow-dark: #F0C52E;
+    --special-red-light: #F6DADA;
+    --special-green: #91C92F;
+}
+
+
+/* Global Styles */
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--basic-black)
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Shared styles */
+
+.section-title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    letter-spacing: 0.2em;
+}
+
+/* Shared styles: Button */
+
+.button {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--basic-black);
+    vertical-align: middle;
+    background-color: var(--basic-white);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--special-yellow-dark);
+}
+
+.button:disabled {
+    cursor: default;
+}
+
+.button.regular:active,
+.button.regular:focus {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: var(--special-yellow-dark);
+}
+
+.button.expandable:active,
+.button.expandable:focus {
+    color: var(--special-yellow);
+    background-color: var(--basic-black);
+}
+
+/* Shared styles: Link */
+
+.link {
+    color: var(--basic-black);
+}
+
+.link:hover {
+    opacity: 0.6;
+}
+
+.link:focus {
+    opacity: 0.3;
+}
+
+
+/* Shared Navigatioin */
+
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation {
+    list-style: none;
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+/* Header Navigation */
+
+.main-navigation {
+    background-color: var(--special-yellow);
+}
+
+.main-navigation input[type="text"] {
+    font: inherit;
+    color: var(--basic-black);
+    background-color: var(--special-yellow);
+    opacity: 0.3;
+    border: none;
+}
+
+.main-navigation input:hover {
+    opacity: 0.6;
+}
+
+.main-navigation input:focus {
+    outline: none;
+    opacity: 1;
+}
+
+
+/* Promo Slider */
+
+.propmo-copy-wrapper .section-title {
+    letter-spacing: 0;
+}
+
+.product-specs {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.product-specs thead {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.product-specs tbody {
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.promo-slider-controls {
+    list-style: none;
+}
+
+
+/* Catalog */
+
+.catalog-items-wrapper {
+    list-style: none;
+}
+
+.catalog-items-wrapper a {
+    color: var(--basic-black);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+
+
+/* Servises */
+
+.services-control-items-wrapper {
+    list-style: none;
+}
+
+.services-item h3 {
+
+}
+
+.services-item p {
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+
+
+/* Brands */
+
+.brand-items-wrapper {
+    list-style: none;
+}
+
+
+/* Company Information */
+
+.company-container p {
+    line-height: 28px;
+}
+
+.transport-partners-wrapper {
+    list-style-type: circle;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+/* Footer */
+
+.page-footer {
+    background-color: var(--basic-dark);
+    color: var(--basic-white)
+}
+
+.page-footer .link {
+    color: var(--basic-white);
+}
+
+.social-share-wrapper {
+    list-style: none;
+}
+
+.social-share-button {
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-share-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.social-share-button:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright {
+    background-color: var(--special-yellow-dark);
+}
+
+.footer-copyright:hover {
+    opacity: 0.6;
+}
+
+.footer-copyright:focus {
+  opacity: 0.3;
+}
+
+.company-phone {
+    color: inherit;
+}
