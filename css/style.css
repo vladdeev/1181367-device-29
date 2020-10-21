@@ -83,7 +83,7 @@ img {
 /* Shared styles */
 
 .section-title {
-    font-family: Gilroy;
+    font-family: "Gilroy", Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -94,7 +94,7 @@ img {
 /* Shared styles: Button */
 
 .button {
-    font-family: Gilroy;
+    font-family: "Gilroy", Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -152,7 +152,7 @@ img {
 
 .site-navigation {
     list-style: none;
-    font-family: Gilroy;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
@@ -192,7 +192,7 @@ img {
 }
 
 .product-specs {
-    font-family: Gilroy;
+    font-family: "Gilroy", Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     letter-spacing: 0.1em;
@@ -221,7 +221,7 @@ img {
 
 .catalog-items-wrapper a {
     color: var(--basic-black);
-    font-family: Gilroy;
+    font-family: "Gilroy", Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -261,7 +261,7 @@ img {
 
 .transport-partners-wrapper {
     list-style-type: circle;
-    font-family: Gilroy;
+    font-family: "Gilroy", Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
