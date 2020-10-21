@@ -80,6 +80,8 @@ img {
     height: auto;
 }
 
+/* Shared styles */
+
 .section-title {
     font-family: Gilroy;
     font-style: normal;
@@ -87,6 +89,58 @@ img {
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
+}
+
+/* Shared styles: Button */
+
+.button {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--basic-black);
+    vertical-align: middle;
+    background-color: var(--basic-white);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--special-yellow-dark);
+}
+
+.button:disabled {
+    cursor: default;
+}
+
+.button.regular:active,
+.button.regular:focus {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: var(--special-yellow-dark);
+}
+
+.button.expandable:active,
+.button.expandable:focus {
+    color: var(--special-yellow);
+    background-color: var(--basic-black);
+}
+
+/* Shared styles: Link */
+
+.link {
+    color: var(--basic-black);
+}
+
+.link:hover {
+    opacity: 0.6;
+}
+
+.link:focus {
+    opacity: 0.3;
 }
 
 
@@ -257,58 +311,4 @@ img {
 
 .company-phone {
     color: inherit;
-}
-
-
-/* Button */
-
-.button {
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--basic-black);
-    vertical-align: middle;
-    background-color: var(--basic-white);
-    border: none;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: var(--special-yellow-dark);
-}
-
-.button:disabled {
-    cursor: default;
-}
-
-.button.regular:active,
-.button.regular:focus {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: var(--special-yellow-dark);
-}
-
-.button.expandable:active,
-.button.expandable:focus {
-    color: var(--special-yellow);
-    background-color: var(--basic-black);
-}
-
-
-/* Link */
-
-.link {
-    color: var(--basic-black);
-}
-
-.link:hover {
-    opacity: 0.6;
-}
-
-.link:focus {
-    opacity: 0.3;
 }
