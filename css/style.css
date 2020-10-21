@@ -84,7 +84,6 @@ img {
 
 .section-title {
     font-family: "Gilroy", Arial, sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
@@ -95,7 +94,6 @@ img {
 
 .button {
     font-family: "Gilroy", Arial, sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -193,7 +191,6 @@ img {
 
 .product-specs {
     font-family: "Gilroy", Arial, sans-serif;
-    font-style: normal;
     font-weight: 300;
     letter-spacing: 0.1em;
 }
@@ -222,7 +219,6 @@ img {
 .catalog-items-wrapper a {
     color: var(--basic-black);
     font-family: "Gilroy", Arial, sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -262,7 +258,6 @@ img {
 .transport-partners-wrapper {
     list-style-type: circle;
     font-family: "Gilroy", Arial, sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;
