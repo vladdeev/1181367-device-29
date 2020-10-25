@@ -44,9 +44,13 @@
 
 :root {
     --basic-black: #000000;
+    --basic-blak-xclear: rgba(0, 0, 0, 0.3);
     --basic-dark: #363636;
     --basic-white:#FFFFFF;
     --basic-gray: #464646;
+    --basic-gray-clear: rgba(255, 255, 255, 0.6);
+    --basic-gray-xclear: rgba(255, 255, 255, 0.3);
+    --basic-gray-xxclear: rgba(255, 255, 255, 0.1);
     --basic-half-gray: #7E7E7E;
     --basic-gray-light: #E5E5E5;
     --special-gray-basic: #EBEBEB;
@@ -125,7 +129,7 @@ img {
 
 .button.regular:active,
 .button.regular:focus {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--basic-blak-xclear);
     background-color: var(--special-yellow-dark);
 }
 
@@ -142,7 +146,7 @@ img {
 }
 
 .link.secondary {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--basic-blak-xclear)
 }
 
 .link:hover {
@@ -209,15 +213,15 @@ img {
 
 .social-share-button {
     color: inherit;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--basic-gray-xclear);
 }
 
 .social-share-button:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--basic-gray-clear);
 }
 
 .social-share-button:focus {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--basic-gray-xxclear);
 }
 
 .footer-copyright {
