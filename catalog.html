@@ -3,164 +3,173 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог - Интернет-магазин гаджетов «Девайс»</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header>
+  <body class="page-body inner-page">
+    <header class="page-header main-header">
       <!-- Navigation -->
-      <nav>
-        <a href="index.html">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
         </a>
-        <input type="text" placeholder="Поиск по сайту">
-        <!-- Secondary Navigation Bar -->
-        <ul>
-          <li><a href="">Валентин Петухов</a></li>
-          <li><a href="">Выйти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+        <input type="text" class="site-search" placeholder="Поиск по сайту">
+        <!-- User Navigation Bar -->
+        <ul class="user-navigation">
+          <li><a class="link" href="">Валентин Петухов</a></li>
+          <li><a class="link secondary" href="">Выйти</a></li>
+          <li><a class="link" href="">Сравнить</a></li>
+          <li><a class="link" href="">Корзина</a></li>
         </ul>
         <!-- Primary Navigation Bar -->
-        <ul>
-          <li><a href="catalog.html">Каталог Товаров</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="site-navigation">
+          <li><a class="link" href="catalog.html">Каталог Товаров</a></li>
+          <li><a class="link" href="">Доставка</a></li>
+          <li><a class="link" href="">Гарантия</a></li>
+          <li><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>Моноподы для селфи</h1>
+    <main class="page-container catalog-container">
+      <h1 class="catalog-page-title">Моноподы для селфи</h1>
 
       <!-- Breadcrumbs -->
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="">Каталог товаров</a></li>
-        <li><a>Моноподы для селфи</a></li>
+      <ul class="breadcrumb-items-wrapper">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="">Каталог товаров</a></li>
+        <li class="breadcrumb-item"><a>Моноподы для селфи</a></li>
       </ul>
 
       <!-- Filter Section -->
-      <section>
-        <h2>Фильтр</h2>
+      <section class="filter-container">
+        <h2 class="section-title">Фильтр</h2>
         <!-- Filter Placeholder -->
       </section>
 
       <!-- Sort Section -->
-      <section>
-        <h2>Сортировка</h2>
-        <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По популярности</a></li>
+      <section class="sort-container">
+        <h2 class="section-title">Сортировка</h2>
+        <ul class="type-items-wrapper">
+          <li><a class="link current" href="">По цене</a></li>
+          <li><a class="link" href="">По типу</a></li>
+          <li><a class="link" href="">По популярности</a></li>
         </ul>
-        <ul>
-          <li><a href="">По возрастанию</a></li>
-          <li><a href="">По убыванию</a></li>
+        <ul class="direction-items-wrapper">
+          <li><a class="link" href="">По возрастанию</a></li>
+          <li><a class="link current" href="">По убыванию</a></li>
         </ul>
       </section>
 
       <!-- Products Section -->
-      <section>
-        <h2>Список моноподов</h2>
+      <section class="product-cards-container">
+        <h2 class="visually-hidden">Список моноподов</h2>
         <!-- Product cards -->
-        <ul>
+        <ul class="product-items-wrapper">
           <!-- Product card 1: Entry Level Selfie Stick -->
-          <li>
-            <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото любительской селфи-палки">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
-            <a href="">
+          <li class="product-item">
+            <img class="product-item-photo" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото любительской селфи-палки">
+            <a class="button" href="">В корзину</a>
+            <a class="link" href="">Добавить к сравнению</a>
+            <a class="product-title" href="">
               <h3>Любительская селфи-палка</h3>
               <p>1 100 руб.</p>
             </a>
           </li>
           <!-- Product card 2: Professional Selfie Stick -->
-          <li>
-            <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото профессиональной селфи-палки">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
-            <a href="">
+          <li class="product-item">
+            <img class="product-item-photo" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото профессиональной селфи-палки">
+            <a class="button" href="">В корзину</a>
+            <a class="link" href="">Добавить к сравнению</a>
+            <a class="product-title"href="">
               <h3>Профессиональная селфи-палка</h3>
               <p>1 500 руб.</p>
             </a>
           </li>
           <!-- Product card 3: Waterproofed Selfie Stick -->
-          <li>
-            <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото непотопляемой селфи-палки">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
-            <a href="">
+          <li class="product-item">
+            <img class="product-item-photo" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото непотопляемой селфи-палки">
+            <a class="button" href="">В корзину</a>
+            <a class="link" href="">Добавить к сравнению</a>
+            <a class="product-title" href="">
               <h3>Непотопляемая селфи-палка</h3>
               <p>1 500 руб.</p>
             </a>
           </li>
           <!-- Product card 4: 'Follow me' Selfie Stick -->
-          <li>
-            <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото селфи-палки «Следуй за мной»">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
-            <a href="">
+          <li class="product-item">
+            <img class="product-item-photo" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Фото селфи-палки «Следуй за мной»">
+            <a class="button" href="">В корзину</a>
+            <a class="link" href="">Добавить к сравнению</a>
+            <a class="product-title" href="">
               <h3>Селфи-палка «Следуй за мной»</h3>
               <p>1 900 руб.</p>
             </a>
           </li>                    
         </ul>
         <!-- Pagination -->
-        <ul>
-          <li><a href="" disabled>Назад</a></li>
+        <ul class="pagination-wrapper">
+          <li class="pagination-control"><a class="button" href="" disabled>Назад</a></li>
           <li><a>1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
-          <li><a href="">Вперёд</a></li>
+          <li class="pagination-control"><a class="button" href="">Вперёд</a></li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="page-footer main-footer">
       <!-- Secondary Navigation Bar + Logo-->
-      <section>
-        <h2>Навигация по сайту</h2>
-        <ul>
-          <li><a href="">Валентин Петухов</a></li>
-          <li><a href="">Выйти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+      <section class="footer-user-navigation" >
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <ul class="user-navigation">
+          <li><a class="link" href="">Валентин Петухов</a></li>
+          <li><a class="link" href="">Войти</a></li>
+          <li><a class="link" href="">Сравнить</a></li>
+          <li><a class="link" href="">Корзина</a></li>
         </ul>
         <!-- Company's logo -->
-        <a>
+        <a class="main-footer-logo">
           <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
         </a>
       </section>
 
       <!-- Contacts + Site Navigation -->
-      <section>
-        <h2>Контакты</h2>
+      <section class="footer-site-navigation">
+        <h2 class="visually-hidden">Контакты</h2>
         <p>г. Москва, ул. Строителей, 15</p>
-        <ul>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="site-navigation">
+          <li><a class="link" href="">Доставка</a></li>
+          <li><a class="link" href="">Гарантия</a></li>
+          <li><a class="link" href="">Контакты</a></li>
         </ul>
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <a class="company-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </section>
 
       <!-- Social media + Copyright -->
-      <section>
-        <h3>Давайте дружить</h3>
-        <div></div><!-- Rectangle Placeholder -->
-        <ul>
+      <section class="footer-links">
+        <h3 class="visually-hidden">Давайте дружить</h3>
+        <ul class="social-share-wrapper">
           <li>
-            <a href="#">Facebook</a>
+            <a class="social-share-button" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
           <li>
-            <a href="#">Instagram</a>
+            <a class="social-share-button" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
           <li>
-            <a href="#">Twitter</a>
+            <a class="social-share-button" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </section>
     </footer>
   </body>
