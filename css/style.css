@@ -86,7 +86,6 @@ img {
 }
 
 
-
 /**
 * SHARED STYLES
 */
@@ -154,7 +153,6 @@ img {
     opacity: 0.3;
 }
 
-
 /* Shared styles: Common Navigatioin */
 
 .user-navigation {
@@ -170,7 +168,6 @@ img {
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-
 
 /* Shared styles: Header Navigation */
 
@@ -194,7 +191,6 @@ img {
     outline: none;
     opacity: 1;
 }
-
 
 /* Shared styles: Footer */
 
@@ -245,7 +241,6 @@ img {
 * MAIN PAGE
 */
 
-
 /* Promo Slider */
 
 .propmo-copy-wrapper .section-title {
@@ -272,7 +267,6 @@ img {
     list-style: none;
 }
 
-
 /* Catalog */
 
 .catalog-items-wrapper {
@@ -287,7 +281,6 @@ img {
     line-height: 22px;
     letter-spacing: 0.05em;
 }
-
 
 /* Servises */
 
@@ -304,13 +297,11 @@ img {
     letter-spacing: 0.1em;
 }
 
-
 /* Brands */
 
 .brand-items-wrapper {
     list-style: none;
 }
-
 
 /* Company Information */
 
@@ -331,6 +322,8 @@ img {
 * CATALOG PAGE
 */
 
+/* Catalog Page Titles */
+
 .catalog-page-title {
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
@@ -344,6 +337,8 @@ img {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+
+/* Breadcrumbs + Sort/Filter Sections */
 
 .filter-container {
     background-color: var(--special-gray-xdark);
@@ -414,6 +409,8 @@ img {
     opacity: 1;
 }
 
+/* Product container */
+
 .product-items-wrapper {
     list-style: none;
 }
@@ -464,6 +461,8 @@ img {
 .product-title p:focus {
     opacity: 0.3;
 }
+
+/* Pagination */
 
 .pagination-wrapper {
     background-color: var(--special-gray-basic);
