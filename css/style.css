@@ -338,8 +338,7 @@ img {
     line-height: 58px;
 }
 
-.catalog-container .section-title, 
-.pagination-control .button {
+.catalog-container .section-title {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.1em;
@@ -433,7 +432,6 @@ img {
 
 .product-item .link:hover {
     opacity: 1;
-    
 }
 
 .product-item .link:focus {
@@ -444,16 +442,7 @@ img {
     font-family: "Gilroy", Arial, sans-serif;
     line-height: 22px;
     letter-spacing: 0.05em;
-    opacity: 1;
     color: var(--basic-black);
-}
-
-.product-title:hover {
-    opacity: 0.6;
-}
-
-.product-title:focus {
-    opacity: 0.3;
 }
 
 .product-title h3 {
@@ -466,5 +455,49 @@ img {
     font-size: 16px;
 }
 
+.product-title h3:hover,
+.product-title p:hover {
+    opacity: 0.6;
+}
 
+.product-title h3:focus,
+.product-title p:focus {
+    opacity: 0.3;
+}
 
+.pagination-wrapper {
+    background-color: var(--special-gray-basic);
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.pagination-wrapper a {
+    color: var(--basic-black);
+}
+
+.pagination-direction-control:hover,
+.pagination-direction-control:focus {
+    background-color: var(--special-gray-dark);
+}
+
+.pagination-direction-control a:focus {
+    opacity: 0.3;
+}
+
+.pagination-page-control a {
+    opacity: 0.3;
+}
+
+.pagination-page-control a:hover {
+    opacity: 0.6;
+}
+
+.pagination-page-control a:focus,
+.pagination-page-control.current a {
+    opacity: 0.6;
+}
