@@ -38,7 +38,9 @@
 }
 
 
-/* Global Variables */
+/**
+* Global Variables
+*/
 
 :root {
     --basic-black: #000000;
@@ -48,6 +50,7 @@
     --basic-half-gray: #7E7E7E;
     --basic-gray-light: #E5E5E5;
     --special-gray-basic: #EBEBEB;
+    --special-gray-xdark: #DCDCDC;
     --special-gray-dark: #D9D9D9;
     --special-gray-light: #EAEAEA;
     --special-gray-xlight: #F2F2F2;
@@ -58,7 +61,9 @@
 }
 
 
-/* Global Styles */
+/**
+* GLOBAL STYLES
+*/
 
 body {
     min-width: 1200px;
@@ -80,7 +85,10 @@ img {
     height: auto;
 }
 
-/* Shared styles */
+
+/**
+* SHARED STYLES
+*/
 
 .section-title {
     font-family: "Gilroy", Arial, sans-serif;
@@ -90,7 +98,7 @@ img {
     letter-spacing: 0.2em;
 }
 
-/* Shared styles: Button */
+/* Button */
 
 .button {
     font-family: "Gilroy", Arial, sans-serif;
@@ -133,6 +141,10 @@ img {
     color: var(--basic-black);
 }
 
+.link.secondary {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .link:hover {
     opacity: 0.6;
 }
@@ -141,8 +153,7 @@ img {
     opacity: 0.3;
 }
 
-
-/* Shared Navigatioin */
+/* Shared styles: Common Navigatioin */
 
 .user-navigation {
     list-style: none;
@@ -158,8 +169,7 @@ img {
     text-transform: uppercase;
 }
 
-
-/* Header Navigation */
+/* Shared styles: Header Navigation */
 
 .main-navigation {
     background-color: var(--special-yellow);
@@ -182,6 +192,54 @@ img {
     opacity: 1;
 }
 
+/* Shared styles: Footer */
+
+.page-footer {
+    background-color: var(--basic-dark);
+    color: var(--basic-white)
+}
+
+.page-footer .link {
+    color: var(--basic-white);
+}
+
+.social-share-wrapper {
+    list-style: none;
+}
+
+.social-share-button {
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-share-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.social-share-button:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright {
+    background-color: var(--special-yellow-dark);
+}
+
+.footer-copyright:hover {
+    opacity: 0.6;
+}
+
+.footer-copyright:focus {
+    opacity: 0.3;
+}
+
+.company-phone {
+    color: inherit;
+}
+
+
+/**
+* MAIN PAGE
+*/
 
 /* Promo Slider */
 
@@ -209,7 +267,6 @@ img {
     list-style: none;
 }
 
-
 /* Catalog */
 
 .catalog-items-wrapper {
@@ -224,7 +281,6 @@ img {
     line-height: 22px;
     letter-spacing: 0.05em;
 }
-
 
 /* Servises */
 
@@ -241,13 +297,11 @@ img {
     letter-spacing: 0.1em;
 }
 
-
 /* Brands */
 
 .brand-items-wrapper {
     list-style: none;
 }
-
 
 /* Company Information */
 
@@ -264,46 +318,185 @@ img {
 }
 
 
-/* Footer */
+/**
+* CATALOG PAGE
+*/
 
-.page-footer {
-    background-color: var(--basic-dark);
-    color: var(--basic-white)
+/* Catalog Page Titles */
+
+.catalog-page-title {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
 }
 
-.page-footer .link {
-    color: var(--basic-white);
+.catalog-container .section-title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-.social-share-wrapper {
+/* Breadcrumbs + Sort/Filter Sections */
+
+.filter-container {
+    background-color: var(--special-gray-xdark);
+}
+
+.sort-container {
+    background-color: var(--basic-gray-light);
+}
+
+.breadcrumb-items-wrapper {
     list-style: none;
+    font-size: 14px;
+    line-height: 19px;
 }
 
-.social-share-button {
+.breadcrumb-item a {
     color: inherit;
-    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
 }
 
-.social-share-button:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.social-share-button:focus {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-copyright {
-    background-color: var(--special-yellow-dark);
-}
-
-.footer-copyright:hover {
+.breadcrumb-item a:hover {
     opacity: 0.6;
 }
 
-.footer-copyright:focus {
-  opacity: 0.3;
+.breadcrumb-item a:focus {
+    opacity: 0.1;
 }
 
-.company-phone {
+.breadcrumb-items-wrapper,
+.type-items-wrapper,
+.direction-items-wrapper {
+    list-style: none;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.breadcrumb-item a,
+.type-items-wrapper a {
     color: inherit;
+    opacity: 0.3;
+}
+
+.breadcrumb-item a:hover,
+.type-items-wrapper a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumb-item a:focus {
+    opacity: 0.1;
+}
+
+.type-items-wrapper a:focus,
+.type-items-wrapper .current {
+    opacity: 1;
+}
+
+.direction-items-wrapper a {
+    background-color: var(--basic-black);
+    opacity: 0.2;
+}
+
+.direction-items-wrapper a:hover {
+    opacity: 0.4;
+}
+
+.direction-items-wrapper a:focus,
+.direction-items-wrapper .current {
+    opacity: 1;
+}
+
+/* Product container */
+
+.product-items-wrapper {
+    list-style: none;
+}
+
+.product-item-photo:hover {
+    opacity: 0.7;
+}
+
+.product-item .link {
+    color: var(--basic-black);
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+}
+
+.product-item .link:hover {
+    opacity: 1;
+}
+
+.product-item .link:focus {
+    opacity: 0.2;
+}
+
+.product-title {
+    font-family: "Gilroy", Arial, sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: var(--basic-black);
+}
+
+.product-title h3 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.product-title p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.product-title h3:hover,
+.product-title p:hover {
+    opacity: 0.6;
+}
+
+.product-title h3:focus,
+.product-title p:focus {
+    opacity: 0.3;
+}
+
+/* Pagination */
+
+.pagination-wrapper {
+    background-color: var(--special-gray-basic);
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.pagination-wrapper a {
+    color: var(--basic-black);
+}
+
+.pagination-direction-control:hover,
+.pagination-direction-control:focus {
+    background-color: var(--special-gray-dark);
+}
+
+.pagination-direction-control a:focus {
+    opacity: 0.3;
+}
+
+.pagination-page-control a {
+    opacity: 0.3;
+}
+
+.pagination-page-control a:hover {
+    opacity: 0.6;
+}
+
+.pagination-page-control a:focus,
+.pagination-page-control.current a {
+    opacity: 0.6;
 }
